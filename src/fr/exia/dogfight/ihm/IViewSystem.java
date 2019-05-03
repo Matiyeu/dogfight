@@ -5,4 +5,5 @@ import java.awt.event.KeyEvent;
 public interface IViewSystem {
 
     void eventPerform(KeyEvent keyCode);
+    void closeAll();
 }
