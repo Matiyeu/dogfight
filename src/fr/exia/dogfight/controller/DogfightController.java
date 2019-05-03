@@ -1,7 +1,7 @@
 package fr.exia.dogfight.controller;
 
 
-import fr.exia.dogfight.ihm.IDogfightModel;
+import fr.exia.dogfight.model.IDogfightModel;
 import fr.exia.dogfight.ihm.IViewSystem;
 
 public class DogfightController implements IOrderPerformer
