@@ -10,4 +10,6 @@ public interface IGraphicsBuilder {
     int getGlobalWidth();
 
     int getGlobalHeight();
+
+
 }
