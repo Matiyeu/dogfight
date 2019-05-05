@@ -9,7 +9,13 @@ import java.util.Observable;
 
 public class DogfightView implements Runnable, IViewSystem {
 
+    private IOrderPerformer orderPerformer;
+    private  IDogfightModel dogfightModel;
+
+
     public DogfightView(IOrderPerformer orderPerformer, IDogfightModel dogfightModel, Observable observable) {
+        this.orderPerformer = orderPerformer;
+        this.dogfightModel = dogfightModel;
     }
 
     @Override
@@ -17,8 +23,7 @@ public class DogfightView implements Runnable, IViewSystem {
 
     }
 
-    @Override
-    public void eventPerform(KeyEvent keyCode) {
+    public void displayMessage(String message) {
 
     }
 
