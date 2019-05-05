@@ -1,8 +1,8 @@
 package fr.exia.dogfight.controller;
 
 
-import fr.exia.dogfight.model.IDogfightModel;
 import fr.exia.dogfight.ihm.IViewSystem;
+import fr.exia.dogfight.model.IDogfightModel;
 
 public class DogfightController implements IOrderPerformer
 {
@@ -26,7 +26,7 @@ public class DogfightController implements IOrderPerformer
 
     }
 
-    public void setView(IViewSystem iViewSystem)
+    public void setViewSystem(IViewSystem iViewSystem)
     {
 
     }
