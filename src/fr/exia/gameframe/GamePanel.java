@@ -10,7 +10,8 @@ public class GamePanel extends JPanel implements Observer {
     private IGraphicsBuilder iGraphicsBuilder;
 
     public GamePanel(IGraphicsBuilder graphicsBuilder) {
-        iGraphicsBuilder = graphicsBuilder;
+
+        this.iGraphicsBuilder = graphicsBuilder;
     }
 
     @Override

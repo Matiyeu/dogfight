@@ -8,10 +8,16 @@ import java.util.Observable;
 public class GameFrame extends JFrame implements KeyListener {
 
     private KeyListener keyListener;
-    private IEventPerformer iEventPerformer;
+    private IEventPerformer performer;
+    private String title;
+    private IGraphicsBuilder graphicsBuilder;
 
     public GameFrame(String title, IEventPerformer performer, IGraphicsBuilder graphicsBuilder, Observable observable) {
-        iEventPerformer = performer;
+
+        this.performer = performer;
+        this.title = title;
+        this.graphicsBuilder = graphicsBuilder;
+
     }
 
     public void keyPressed(KeyEvent keyEvent) {
@@ -19,16 +25,11 @@ public class GameFrame extends JFrame implements KeyListener {
     }
 
     public void keyReleased(KeyEvent keyEvent) {
-
+        this.keyListener = keyListener;
     }
 
     public void keyTyped(KeyEvent keyEvent) {
 
-    }
-
-
-    public GameFrame(KeyListener nomKeyListener) {
-        keyListener = nomKeyListener;
     }
 
 
