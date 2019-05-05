@@ -6,14 +6,15 @@ import java.awt.*;
 public class Mobile implements IMobile {
 
     private Image image;
-
-    private Point position;
+    private IDogfightModel IDogfightModel;
+    private Position position;
     private Direction direction;
     private Dimension dimension;
     private int speed;
     private String imageName;
+    private Color color;
 
-    public Mobile(Point position, Direction direction, Dimension dimension, int speed, String imageName) {
+    public Mobile( Direction direction, Position position, Dimension dimension, int speed, String imageName) {
         this.position = position;
         this.direction = direction;
         this.dimension = dimension;
@@ -59,11 +60,11 @@ public class Mobile implements IMobile {
         this.image = image;
     }
 
-    public Point getPosition() {
+    public Position getPosition() {
         return position;
     }
 
-    public void setPosition(Point position) {
+    public void setPosition(Position position) {
         this.position = position;
     }
 
@@ -108,4 +109,26 @@ public class Mobile implements IMobile {
     public void setImageName(String imageName) {
         this.imageName = imageName;
     }
+
+    private void moveUp() {
+    }
+
+    private void moveRight() {
+    }
+
+    private void moveDown() {
+    }
+
+    private void moveLeft() {
+    }
+
+    public Color getColor() {
+        return this.color;
+
+    }
+
+    public IDogfightModel getIDogfightModel() {
+        return IDogfightModel;
+    }
+
 }

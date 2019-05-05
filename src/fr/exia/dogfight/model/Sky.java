@@ -14,7 +14,7 @@ public class Sky implements IArea {
     }
 
     @Override
-    public Dimension getDimensiont() {
+    public Dimension getDimension() {
         return null;
     }
 

@@ -7,7 +7,7 @@ public interface IMobile {
 
     void setDirection(Direction direction);
 
-    Point getPosition();
+    Position getPosition();
 
     Dimension getDimension();
 

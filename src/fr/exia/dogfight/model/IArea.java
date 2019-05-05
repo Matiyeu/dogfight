@@ -3,7 +3,7 @@ package fr.exia.dogfight.model;
 import java.awt.*;
 
 public interface IArea {
-    Dimension getDimensiont();
+    Dimension getDimension();
 
     Image getImage();
 }
